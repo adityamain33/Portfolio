@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #f0f4f8, #d9e9f2);
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+        
+        h2 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 50px;
+            color: #007eaa;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            padding: 0 20px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .card h3 {
+            font-size: 22px;
+            color: #007eaa;
+            margin-bottom: 12px;
+        }
+        
+        .card p {
+            font-size: 15px;
+            color: #444;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+        
+        .card a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 18px;
+            background: #00bcd4;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+            margin-right: 10px;
+        }
+        
+        .card a:hover {
+            background: #0097a7;
+        }
+        
+        footer {
+            background: #1e1e1e;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 30px;
+            }
+            .card img {
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Project Section -->
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="card">
+                <img src="Recycle001.svg" alt="E-Waste Project" />
+                <h3>E-Waste & Inventory Management System</h3>
+                <p>An E-Waste & Inventory Management System built with the MERN stack (MongoDB, Express.js, React.js, Node.js) is a full-stack web application that helps manage electronic waste collection and product inventory efficiently.</p>
+                <a href="https://github.com/adityamain33/E-Waste-Inventory-Management-System" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card">
+                <img src="todo.PNG" alt="To-Do CLI App" />
+                <h3>CLI To-Do List</h3>
+                <p>A Command Line Interface (CLI) To-Do List built with Node.js allows users to manage tasks directly in the terminal. It’s a lightweight application for adding, viewing, and deleting tasks, using plain JavaScript and Node.js features.</p>
+                <a href="https://github.com/adityamain33/CLI-TODO-List" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="card">
+                <img src="download.jpeg" alt="Research Paper" />
+                <h3>Research Paper</h3>
+                <p>Maintaining a chain of custody is crucial for ensuring the integrity and traceability of assets, especially in sectors like supply chain, digital forensics, and waste management. Blockchain technology offers a secure, transparent, and
+                    tamper-proof way to track every transaction or movement of an item.</p>
+                <a href="Research_paper _certificate.pdf" target="_blank">View Certificate</a>
+                <a href="IRJMETS70600166831.pdf" target="_blank">View Paper</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Aditya Main | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

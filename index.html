@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #eef7fa, #dceeff);
+            color: #333;
+        }
+        
+        header {
+            background: #ffffffaa;
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            color: #00bcd4;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        nav a::after {
+            content: "";
+            height: 2px;
+            width: 0;
+            background: #00bcd4;
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            transition: 0.3s;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        .section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #007eaa;
+        }
+        
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #00bcd4;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        
+        .section p {
+            font-size: 16px;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #444;
+        }
+        
+        #contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        #contact-form input,
+        #contact-form textarea {
+            padding: 12px 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            width: 100%;
+        }
+        
+        #contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        #contact-form button {
+            padding: 12px 20px;
+            background: #00bcd4;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        #contact-form button:hover {
+            background: #0097a7;
+        }
+        
+        footer {
+            background: #1e1e1e;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+            .section h2 {
+                font-size: 26px;
+            }
+            nav ul {
+                gap: 15px;
+            }
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Aditya Main</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./education.html">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <img src="WhatsApp Image 2025-01-24 at 12.33.39 AM.jpeg" alt="Profile Photo" class="profile-img" />
+            <h2>Hello! I'm Aditya 👋</h2>
+            <p>
+                I am a passionate Full Stack Web Developer specializing in building modern, responsive, and dynamic web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js). With a strong foundation in both frontend and backend development, I create
+                seamless user experiences and robust server-side logic. Whether it's designing intuitive user interfaces or building secure RESTful APIs, I thrive in developing complete end-to-end web solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Aditya Main | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
